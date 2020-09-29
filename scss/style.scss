@@ -85,6 +85,7 @@ h1 {
 h2 {
   margin-bottom: 2em;
   font-size: 2em;
+  text-transform: uppercase;
 }
 
 .img-box {
@@ -164,4 +165,29 @@ address {
 .map {
   margin-top: 2em;
   float: right;
+}
+
+@media only screen and (max-width: 1350px) {
+  main {
+    padding: 1em;
+  }
+
+  h1,
+  h3 {
+    width: 90%;
+  }
+
+  .img-box {
+    width: 50%;
+    margin-top: 3em;
+  }
+
+  footer {
+    text-align: center;
+  }
+
+  address,
+  .map {
+    float: unset;
+  }
 }
