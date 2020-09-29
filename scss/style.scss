@@ -1,108 +1,143 @@
-@import 'vars';
-@import 'mixins';
+@import "vars";
+@import "mixins";
 
 @include main;
 
-main{
-    height: 100vh;
-    background-image: url('../slike/background.jpg');
-    background-size: cover;
-    padding: 3em 15em;
+main {
+  height: 100vh;
+  background-image: url("../slike/background.jpg");
+  background-size: cover;
+  padding: 3em 15em;
 }
 
-.logo{
-    span{
-        color:$main_red;
-    }
+.logo {
+  span {
+    color: $main_red;
+  }
 }
 
-header, section, footer{
-    @include clearfix;
+header,
+section,
+footer {
+  @include clearfix;
 }
 
-section, footer{
-    padding: 5em 10em;
-    text-align: center;
-
+section,
+footer {
+  padding: 5em 10em;
+  text-align: center;
 }
 
-header{
-    background-color: #fff;
-    padding: 0 0.5em;
+header {
+  background-color: #fff;
+  padding: 0 0.5em;
 
-    .logo{
-        font-size: 2em;
-        float: left;
-        font-weight: bold;
-    }
-}
-
-nav{
-    float: right;
-    @include clearfix;
-
-    ul{
-        list-style: none;
-
-        li{
-            display: inline-block;
-            padding: 1em;
-            margin-left: 10px;
-
-            &:hover{
-                background-color: rgb(43, 43, 43);
-                a{
-                    color: #fff;
-                } 
-            }
-        }
-
-        a{
-            text-decoration: none;
-        }
-    }
-}
-
-h1, h3{
-    color: #fff;
-    text-align: center;
-    width: 60%;
-    font-weight: normal;
-    margin: 0 auto;
-}
-
-h1{
-    border-bottom: 2px solid $main_red;
-    margin-top: 20%;
-}
-
-#catalog{
-    background-color: $grey_background;
-}
-
-h2{
-    margin-bottom: 2em;
+  .logo {
     font-size: 2em;
-}
-
-.img-box{
-    width: 25%;
     float: left;
-
-    img{
-        width: 90%;
-    }
-
-    p{
-        margin: 1em 0;
-    }
-
+    font-weight: bold;
+  }
 }
 
-.button{
-    padding: 0.5em 1em;
+nav {
+  float: right;
+  @include clearfix;
+
+  ul {
+    list-style: none;
+
+    li {
+      display: inline-block;
+      padding: 1em;
+      margin-left: 10px;
+
+      &:hover {
+        background-color: rgb(43, 43, 43);
+        a {
+          color: #fff;
+        }
+      }
+    }
+
+    a {
+      text-decoration: none;
+    }
+  }
+}
+
+h1,
+h3 {
+  color: #fff;
+  text-align: center;
+  width: 60%;
+  font-weight: normal;
+  margin: 0 auto;
+}
+
+h1 {
+  border-bottom: 2px solid $main_red;
+  margin-top: 20%;
+}
+
+#catalog {
+  background-color: $grey_background;
+}
+
+h2 {
+  margin-bottom: 2em;
+  font-size: 2em;
+}
+
+.img-box {
+  width: 25%;
+  float: left;
+
+  img {
+    width: 90%;
+  }
+
+  p {
+    margin: 1em 0;
+  }
+}
+
+.button {
+  padding: 0.5em 1em;
+  background-color: $main_red;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+table {
+  width: 60%;
+  margin: 0 auto;
+  border-collapse: collapse;
+
+  td,
+  th {
+    padding: 1em;
+  }
+
+  thead {
     background-color: $main_red;
-    color: #fff;
-    text-decoration: none;
-    text-transform: uppercase;
+
+    th {
+      color: #fff;
+
+      &:first-child {
+        background-color: $red_dark;
+      }
+    }
+  }
+
+  td{
+      border-bottom: 1px solid $main_text_color;
+  }
+
+ .first{
+     background-color: $grey_background;
+     color: $main_text_color;
+     font-weight: bold;
+ }
 }
