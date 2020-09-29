@@ -22,8 +22,7 @@ footer {
   @include clearfix;
 }
 
-section,
-footer {
+section {
   padding: 5em 10em;
   text-align: center;
 }
@@ -131,13 +130,38 @@ table {
     }
   }
 
-  td{
-      border-bottom: 1px solid $main_text_color;
+  td {
+    border-bottom: 1px solid $main_text_color;
   }
 
- .first{
-     background-color: $grey_background;
-     color: $main_text_color;
-     font-weight: bold;
- }
+  .first {
+    background-color: $grey_background;
+    color: $main_text_color;
+    font-weight: bold;
+  }
+}
+
+footer {
+  padding: 3em 10em;
+  background-color: #000;
+  text-align: left;
+
+  .logo {
+    font-size: 1.3em;
+    border-bottom: 1px solid $main_red;
+  }
+}
+
+address {
+  float: left;
+  margin-top: 2em;
+
+  p {
+    color: #fff;
+  }
+}
+
+.map {
+  margin-top: 2em;
+  float: right;
 }
